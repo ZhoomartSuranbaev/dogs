@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Image</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        #dogImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        #breedSelect {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Random Dog Image</h1>
+        
+        <!-- Button to get random dog image -->
+        <button class="btn btn-primary" id="fetchImageBtn">Get Random Dog Image</button>
+        
+        <!-- Dropdown to select dog breed -->
+        <div id="breedSelect">
+            <h3>Select a Breed</h3>
+            <select id="breedDropdown" class="form-control">
+                <option value="">Select a breed</option>
+            </select>
+            <button class="btn btn-success mt-2" id="fetchBreedImageBtn">Get Breed Image</button>
+        </div>
+
+        <!-- Dropdown to select sub-breed of hound -->
+        <div id="houndSubBreedSelect" class="mt-4" style="display: none;">
+            <h3>Select a Hound Sub-Breed</h3>
+            <select id="houndSubBreedDropdown" class="form-control">
+                <option value="">Select a sub-breed</option>
+            </select>
+            <button class="btn btn-warning mt-2" id="fetchHoundSubBreedImageBtn">Get Sub-Breed Image</button>
+        </div>
+
+        <!-- Container for displaying the dog image -->
+        <div id="dogImageContainer" class="mt-4">
+            <img id="dogImage" src="" alt="Random Dog Image" />
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
